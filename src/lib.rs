@@ -1,14 +1,13 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
+pub use html_sanitize_derive::HtmlSanitize;
+
+pub trait HtmlSanitize {
+    fn sanitize(&self) -> Self;
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub fn sanitize_html_string(html_string: &str) -> String {
+    ammonia::clean(html_string)
+}
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+pub fn sanitize_html_option_string(html_string: Option<&String>) -> Option<String> {
+    html_string.map(|s| sanitize_html_string(s))
 }
