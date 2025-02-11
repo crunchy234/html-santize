@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "Derive macro for html_sanitize"
+homepage = "https://github.com/crunchy234/html_sanitize"
+repository = "https://github.com/crunchy234/html_sanitize"
+keywords = ["html", "sanitize", "macro", "derive"]
+categories = ["web-programming"]
 
 [lib]
 proc-macro = true
