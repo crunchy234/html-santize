@@ -3,6 +3,7 @@ name = "html_sanitize"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+description = "A macro based HTML sanitizer to add to structs so they can be sanitised before storage or transmission"
 
 [dependencies]
 ammonia = "4.0.0"

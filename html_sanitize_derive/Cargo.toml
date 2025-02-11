@@ -3,6 +3,7 @@ name = "html_sanitize_derive"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
+description = "Derive macro for html_sanitize"
 
 [lib]
 proc-macro = true
